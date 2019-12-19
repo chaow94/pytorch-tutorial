@@ -209,10 +209,6 @@ def validate(val_loader, model, criterion, args):
     with torch.no_grad():
         end = time.time()
         for i, (images, target) in enumerate(val_loader):
-            if torch.cuda.is_available():
-                images = images.cuda()
-            target = target.cuda()
-
             # compute output
             output = model(images)
             loss = criterion(output, target)
