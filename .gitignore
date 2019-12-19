@@ -87,6 +87,11 @@ data
 
 *.pt
 *.pth
+*.tar
+
+DATASET
+.DATASET
+
 
 # Jupyter Notebook
 .ipynb_checkpoints
